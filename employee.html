@@ -1,24 +1,46 @@
 <html>
     <head>
-        <title>Employee Management</title>
-        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+        <title>Employee Management</title> 
     </head>
     <body>
         <div class="head1"><h1>Employee Management</h1></div>
-        
+
         <form>
             <fieldset>
             <legend>Add Employee</legend>
-            Name : <input type="text" id="nameInput"> 
-            <select>
+            Name : <input id="nameInput" />
+            <select id="position">
                     <option value="Developer">Developer</option>
                     <option value="Tester">Tester</option>
                     <option value="System Analysis">System Analysis</option>
                     <option value="Project Manager" selected>Project Manager</option>
-            </select>
+            </select><br>
+            Salary : <input id="salary" type="number">
+            Work-Experience : <input id="experience" type="number"><br>
+            <button onclick='addButton()'>Add</button>
             </fieldset>
-        </from>
+        </from><hr>
+        
 
+        <fieldset>
+                <legend>Employee On</legend>
+                <ul id="listOn">
+                    <li>
+                        <input type="checkbox"> <label>John Connor [Position] : Developer [Salary] : 20000 [Experience] : 3 </label><button class="edit">Edit</button><button class="delete">Delete</button>
+                    </li>
+                </ul>
+        </fieldset><hr>
+        
 
+        <fieldset>
+                <legend>Employee Off</legend>
+                <ul id="listOff">
+                    <li>
+                        <s><input type="checkbox"> <label>Connor Mcgregor [Position] : Tester [Salary] : 18000 [Experience] : 2 </label><button class="delete">Delete</button></s>
+                    </li>
+                </ul>
+        </fieldset>
+
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
