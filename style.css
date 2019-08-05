@@ -1,0 +1,65 @@
+#head1{
+    width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+    color: rgb(148, 42, 42);
+    font-size: 20px;
+}
+
+#container{
+    display: block;
+    width: 800px;
+    margin: 10px auto 0;
+}
+
+#buttonAdd{
+    background-color: rgb(0, 172, 129); 
+    margin: 10 10 10 700;
+    border: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+
+.delete{
+    background-color: rgb(172, 40, 0); 
+    border: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+.edit{
+    background-color: rgb(0, 172, 129); 
+    border: 10px;
+    margin: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+.save{
+    background-color: rgb(0, 123, 172); 
+    border: 10px;
+    margin: 10px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+
+}

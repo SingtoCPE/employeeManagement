@@ -15,25 +15,45 @@ function addButton(){
     const salary            = ' [Salaly] : ';
     const experience        = ' [Experience] : ';
 
+    
+
     // const editCheckBox = document.createElement('input');
     // editCheckBox.disabled='disable';
     // editCheckBox.type='checkbox';
     // editCheckBox.id='1';
 
-    const editInputName = document.createElement('input');
-    editInputName.value=inputName.value;
-    editInputName.disabled='disable';
-    editInputName.type='input';
-    editInputName.id='1';
+    const editInputName     = document.createElement('input');
+    editInputName.value     = inputName.value;
+    editInputName.disabled  = 'disable';
+    editInputName.type      = 'text';
+    editInputName.id        = '1';
+
+    const editInputPosition     = document.createElement('input');
+    editInputPosition.value     = inputPosition.value;
+    editInputPosition.disabled  = 'disable';
+    editInputPosition.type      = 'text';
+    editInputPosition.id        = '2';
+
+    const editInputSalary     = document.createElement('input');
+    editInputSalary.value     = inputSalary.value;
+    editInputSalary.disabled  = 'disable';
+    editInputSalary.type      = 'number';
+    editInputSalary.id        = '3';
+
+    const editInputExperience     = document.createElement('input');
+    editInputExperience.value     = inputExperience.value;
+    editInputExperience.disabled  = 'disable';
+    editInputExperience.type      = 'number';
+    editInputExperience.id        = '4';
     
     list.append(checkBox);
     list.append(editInputName);
     list.append(position);
-    list.append(inputPosition.value);
+    list.append(editInputPosition);
     list.append(salary);
-    list.append(inputSalary.value);
+    list.append(editInputSalary);
     list.append(experience);
-    list.append(inputExperience.value);
+    list.append(editInputExperience);
 	list.append(editButton);
     list.append(deleteButton);
     
@@ -50,10 +70,10 @@ function addButton(){
 	// เอา list ไปโชว์ใน ul 
     listParent.appendChild(list);
     
-    document.getElementById('nameInput').value  ='';
-    document.getElementById('position').value   ='';
-    document.getElementById('salary').value     ='';
-    document.getElementById('experience').value ='';
+    document.getElementById('nameInput').value  = '';
+    document.getElementById('position').value   = '';
+    document.getElementById('salary').value     = '';
+    document.getElementById('experience').value = '';
 }
 
 function deleteclick(){
@@ -65,14 +85,23 @@ function deleteclick(){
 }
 
 function editclick(){
-    const ableInputName = document.getElementById('1');
-    ableInputName.disabled=undefined;
+    const ableInputName             = document.getElementById('1');
+    ableInputName.disabled          = undefined;
 
+    const ableInputPosition         = document.getElementById('2');
+    ableInputPosition.disabled      = undefined;
+
+    const ableInputSalary           = document.getElementById('3');
+    ableInputSalary.disabled        = undefined;
+    
+    const ableInputExperience       = document.getElementById('4');
+    ableInputExperience.disabled    = undefined;
+    
     const saveButton        = document.createElement('button');
-    saveButton.innerText  = 'Save';
-    saveButton.className  = 'save';
-    saveButton.onclick    = saveclick;
-    const editList = document.getElementById('listId')
+    saveButton.innerText    = 'Save';
+    saveButton.className    = 'save';
+    saveButton.onclick      = saveclick;
+    const editList          = document.getElementById('listId')
     console.log(editList);
     editList.append(saveButton);
 
@@ -80,6 +109,15 @@ function editclick(){
 }
 
  function saveclick(){
-    const ableInputEdit = document.getElementById('1');
-    ableInputEdit.disabled='disable';
+    const ableInputEdit         = document.getElementById('1');
+    ableInputEdit.disabled      = 'disable';
+
+    const ableInputPosition     = document.getElementById('2');
+    ableInputPosition.disabled  = 'disable';
+
+    const ableInputSalary       = document.getElementById('3');
+    ableInputSalary.disabled    = 'disable';
+
+    const ableInputExperience     = document.getElementById('4');
+    ableInputExperience.disabled  = 'disable';
 }
