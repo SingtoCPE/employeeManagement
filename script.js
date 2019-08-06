@@ -14,8 +14,13 @@ function addButton(){
     const position          = ' [Position] : ';
     const salary            = ' [Salaly] : ';
     const experience        = ' [Experience] : ';
+    //save button
+    const saveButton        = document.createElement('button');
+    saveButton.innerText    = 'Save';
+    saveButton.className    = 'save';
+    saveButton.onclick      = saveclick;
+    // saveButton.disabled  = 'disable';
 
-    
 
     // const editCheckBox = document.createElement('input');
     // editCheckBox.disabled='disable';
@@ -56,6 +61,7 @@ function addButton(){
     list.append(editInputExperience);
 	list.append(editButton);
     list.append(deleteButton);
+    list.append(saveButton);
     
 
     editButton.innerText    = 'Edit';
@@ -97,13 +103,7 @@ function editclick(){
     const ableInputExperience       = document.getElementById('4');
     ableInputExperience.disabled    = undefined;
     
-    const saveButton        = document.createElement('button');
-    saveButton.innerText    = 'Save';
-    saveButton.className    = 'save';
-    saveButton.onclick      = saveclick;
-    const editList          = document.getElementById('listId')
-    console.log(editList);
-    editList.append(saveButton);
+    
 
     
 }
